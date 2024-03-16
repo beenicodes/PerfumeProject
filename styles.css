@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   to Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ********************************************************* */
+
+body{
+    background-color: #F3EAE3; 
+}
+
+.perfume-container{
+    display: flex;
+    justify-content: center;
+}
+
+.perfume-content{
+    display: flex;
+    justify-content: center;
+    margin: 75px 0px;
+}
+
+.image-desktop{
+    width: 350px;
+    height: 525px;
+    border-radius: 10px;
+}
+
+.image-mobile{
+    display: none;
+}
+
+.main-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 525px;
+    border-radius: 10px;
+}
+
+.info{
+    margin: 25px;
+}
+
+.cart-button{
+    background-color: #3D8168;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.icon-cart{
+    margin-right: 10px;
+}
+
+#cart{
+    font-weight: 700;
+    color: white;
+}
+
+
+h1{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 25px;
+
+}
+
+.custom-font{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    size: 14px;
+    line-height: 1.6;
+    color: grey;
+    margin-bottom: 30px;
+
+}
+
+.custom-heading{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    size: 14px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    color: grey;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.price{
+    display: flex;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 30px;
+    color: #3D8168;
+    margin-bottom: 35px;
+}
+
+.strike-price{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-left: 80px;
+    font-family: 'Fraunces';
+    font-weight: 550px;
+    font-size: 15px;
+    color: grey;
+
+}
+
+@media (max-width: 600px){
+    .image-desktop{
+        display: none;
+    }
+    
+    .image-mobile{
+        display: block;
+        width: 375px;
+        height: 250px; 
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .perfume-content{
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .main-container{
+        width: 375px;
+        height: 100%;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .custom-heading{
+        font-size: 16px;
+        letter-spacing: 3.5px;
+    }
+
+    p{
+        font-size: 15.5px;
+    }
+
+    #price{
+        font-size: 14px;
+        justify-content: left;
+    }
+
+    #strike-price{
+        margin-bottom: 20px;
+    }
+}
+
+
