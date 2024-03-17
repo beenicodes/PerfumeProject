@@ -150,13 +150,12 @@ h1{
 
 .strike-price{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     padding: 10px;
-    margin-left: 80px;
+    margin-left: 20px;
     font-family: 'Fraunces';
-    font-weight: 550px;
-    font-size: 15px;
+    font-size: 13px;
     color: grey;
 
 }
